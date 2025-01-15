@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/*HEADER*/
+header{
+    background-color: #DEDEDF;
+}
+
+header nav section#perfil-pessoal div#foto-perfil-pessoal{
+    background-image: url("../images/");
+}
