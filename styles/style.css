@@ -6,14 +6,178 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-
-
-/*HEADER*/
-header{
-    background-color: #DEDEDF;
+    color: #3d3d3d;
 }
 
-header nav section#perfil-pessoal div#foto-perfil-pessoal{
-    background-image: url("../images/");
+
+
+
+
+#perfil-pessoal{
+    background-color: #DEDEDF;
+    width: 30%;
+    height: 65px;
+    padding: 10px;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#perfil-pessoal div#foto-perfil-pessoal{
+    background-image: url("../images/avatar1.png");
+}
+
+#perfil-pessoal div.foto-topo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #afafaf;
+}
+
+#perfil-pessoal .material-icons{
+    color: #72777b;
+
+    margin-left: 15px;
+    padding: 5px;
+    
+    border-radius: 10px;
+}
+
+#perfil-pessoal .material-icons:hover{
+    background-color: #c9c9c9db;
+    transition: .2s;
+}
+
+
+
+#aba-contatos{
+    width: 30%;
+}
+
+#aba-contatos #notificacao{
+    background-color: #9BE1FE;
+    padding: 15px 30px;
+
+    position: relative;
+}
+
+#aba-contatos #notificacao .material-icons{
+    height: 55px;
+    width: 55px;
+    
+    text-align: center;
+    color: #9BE1FE;
+
+    background-color: white;
+    border-radius: 50px;
+
+    margin-top: 5px;
+    padding: 15px 10px 0;
+}  
+
+#aba-contatos #notificacao p:nth-of-type(1){
+    position: absolute;
+    top: 26px;
+    left: 100px;
+    font-size: 17px;
+}
+
+#aba-contatos #notificacao p:nth-of-type(2){
+    position: absolute;
+    top: 46px;
+    left: 100px;
+}
+
+#aba-contatos #notificacao p a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #3d3d3d;
+}
+
+#aba-contatos #notificacao p a:hover{
+    text-decoration: underline;
+}
+
+
+#aba-contatos #busca form{
+    background-color: #d3d3d352;
+    padding: 8px 20px;
+
+    position: relative;
+}
+
+#aba-contatos #busca form label{
+    color: #a0a0a0ac;
+
+    position: absolute;
+    top: 15px;
+    left: 35px;
+}
+
+#aba-contatos #busca form input{
+    width: 100%;
+
+    border-radius: 15px;
+    border: 1px solid #d3d3d34f;
+
+    padding: 10px;
+}
+
+#aba-contatos #busca form input::placeholder{
+    color: #a0a0a0;
+    padding-left: 38px;
+}
+
+
+#aba-contatos #contatos{
+    padding: 5px 10px;
+}
+
+#aba-contatos #contatos .contato{
+    border-bottom: 1px solid #d3d3d39b;
+    padding: 10px;
+}
+
+#aba-contatos #contatos #alexia-couto div{
+    background-image: url("../images/avatar2.png");
+}
+
+#aba-contatos #contatos #joao-augusto div{
+    background-image: url("../images/avatar3.png");
+}
+
+#aba-contatos #contatos #maria-silva div{
+    background-image: url("../images/avatar4.png");
+}
+
+#aba-contatos #contatos .chats-fotos{
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+
+    background-color: #afafaf;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#aba-contatos #contatos div{
+    position: relative;
+}
+
+#aba-contatos #contatos div h6{
+    color: #a0a0a0;
+
+    position: absolute;
+    left: 410px;
+    top: 0px;
 }

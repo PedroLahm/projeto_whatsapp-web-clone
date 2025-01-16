@@ -5,54 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <title>WhatsApp Web Clone</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <section id="perfil-pessoal">
-                <div id="foto-perfil-pessoal" class="foto-topo">[IMAGEM]</div>
-
-                <div id="status">[ICONE]</div>
-                <div id="mensagem">[ICONE]</div>
-                <div class="mais-opcoes">[ICONE]</div>
-            </section>
-        </nav>
-    </header>
-
     <main>
+        <article id="perfil-pessoal">
+            <div id="foto-perfil-pessoal" class="foto-topo"></div>
+            <div id="icones-nav">
+                <i class="material-icons">track_changes</i>
+                <i class="material-icons">chat</i>
+                <i class="material-icons">more_vert</i>
+            </div>
+        </article>
+
         <article id="aba-contatos">
             <section id="notificacao">
-                <div id="sino">[IMAGEM]</div>
-                <p>Receba notificações de novas mensagems</p>
-                <blockquote>
+                <i class="material-icons">notifications_off</i>
+                <p>Receba notificações de novas mensagens</p>
+                <p>
                     <a href="#">Ativar notificações na área de trabalho ></a>
-                </blockquote>
+                </p>
             </section>
 
             <section id="busca">
                 <form action="#" method="post">
-                    <p><input type="text" placeholder="Procurar ou começar uma nova conversa"></p>
+                    <p>
+                        <label for="caixa-busca"><i class="material-icons">search</i></label>
+                        <input type="text" name="caixa-busca" id="caixa-busca" placeholder="Procurar ou começar uma nova conversa">
+                    </p>
                 </form>
             </section>
 
             <section id="contatos">
-                <div id="alexia-couto">
+                <div id="alexia-couto" class="contato">
+                    <div class="chats-fotos"></div>
                     <h3>Aléxia Couto</h3>
                     <p>Oi, tudo bem?</p>
 
                     <h6>22:40</h6>
                 </div>
 
-                <div id="joao-augusto">
+                <div id="joao-augusto" class="contato">
+                    <div class="chats-fotos"></div>
                     <h3>João Augusto</h3>
                     <p>Está disponível para um freela?</p>
 
                     <h6>12:30</h6>
                 </div>
 
-                <div id="maria-silva">
+                <div id="maria-silva" class="contato">
+                    <div class="chats-fotos"></div>
                     <h3>Maria Silva</h3>
                     <p>O projeto ficou perfeito, obrigada!</p>
 
